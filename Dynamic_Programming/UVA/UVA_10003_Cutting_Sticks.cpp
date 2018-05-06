@@ -8,7 +8,7 @@ using namespace std;
 
 int dp[52][52]={{0}},cuts[52];
 
-int solve(int start, int end){
+int solve(aint start, int end){
   int minCost = 100000;
   if(start + 1 == end){
     return (dp[start][end] = 0);
@@ -45,5 +45,4 @@ int main(){
     minCost = solve(0,n+1);
     cout<<"The minimum cutting is " <<minCost<<"."<<endl;
   }
-
 }
